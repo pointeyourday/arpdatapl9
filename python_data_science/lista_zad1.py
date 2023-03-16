@@ -8,18 +8,16 @@
 animals = ["Kot", "Pies", "Słoń", "Żółw", "Chomik", "Papuga"]
 print(animals)
 
-def manage_list (działanie, wartość):
-    if działanie == "dodaj":
-        animals.append(wartość)
-    elif działanie == "usuń":
-        animals.pop(wartość)
-    else:
-        print("błąd polecenia")
+def manage_list (option, value):
+    if option == "dodaj":
+        animals.append(value)
+    elif option == "usuń":
+        animals.pop()
 
-manage_list("dodaj", "Tygrys")
+manage_list("dodaj", "Kanarek")
 print(animals)
 
-manage_list("ddaj", 2)
+manage_list("usuń", "Kot")
 print(animals)
 
 
